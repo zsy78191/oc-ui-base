@@ -1,0 +1,61 @@
+PODS:
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - Classy (1.0.0)
+  - IQKeyboardManager (6.2.0)
+  - Masonry (1.1.0)
+  - oc-string (0.0.1):
+    - RegexKitLite (~> 4.0)
+    - YYKit (~> 1.0.9)
+  - pop (1.0.12)
+  - RegexKitLite (4.0)
+  - SDWebImage (4.4.3):
+    - SDWebImage/Core (= 4.4.3)
+  - SDWebImage/Core (4.4.3)
+  - SVProgressHUD (2.2.5)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - ChameleonFramework
+  - Classy
+  - IQKeyboardManager
+  - Masonry
+  - oc-string (from `../../base/oc-string/oc-string.podspec`)
+  - pop
+  - SDWebImage
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ChameleonFramework
+    - Classy
+    - IQKeyboardManager
+    - Masonry
+    - pop
+    - RegexKitLite
+    - SDWebImage
+    - SVProgressHUD
+    - YYKit
+
+EXTERNAL SOURCES:
+  oc-string:
+    :podspec: "../../base/oc-string/oc-string.podspec"
+
+SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  Classy: bbe2436d6872dfeda5eaa2a3c3d705a9c30b1709
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  oc-string: d792cc8683f4fe5ce9f60dc8bf4716f1baf68aaf
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: ca37127618f1a056d5a9716dce2c16c50e64f599
+
+COCOAPODS: 1.5.3
