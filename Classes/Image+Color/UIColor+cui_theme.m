@@ -161,14 +161,14 @@ static inline NSUInteger hexStrToInt(NSString *str) {
 
 @implementation CUITheme
 
-+ (void)load
++ (void)loadDefault
 {
     NSDictionary* defalutKeyAndValue =
     @{
       @"g1":@"DEFFC9",
       @"g2":@"A3F8FF"
       };
-//    NSLog(@"%@",defalutKeyAndValue);
+    //    NSLog(@"%@",defalutKeyAndValue);
     [[NSUserDefaults standardUserDefaults] registerDefaults:defalutKeyAndValue];
     
     NSDictionary* d = [CUITheme setupCustomTheme];

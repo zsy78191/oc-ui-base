@@ -34,6 +34,7 @@
 
 @interface CUITheme : NSObject
 
++ (void)loadDefault;
 + (NSDictionary*)setupCustomTheme;
 
 @end

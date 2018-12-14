@@ -341,7 +341,7 @@
 
 @end
 
-void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
+void uibase_swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 {
     // the method might not exist in the class, but in its superclass
     Method originalMethod = class_getInstanceMethod(class, originalSelector);
@@ -363,7 +363,7 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
 
 + (void)load
 {
-    swizzleMethod([UIControl class],@selector(swiz_setHighlighted:),@selector(setHighlighted:));
+//    uibase_swizzleMethod([UIControl class],@selector(swiz_setHighlighted:),@selector(setHighlighted:));
 }
 
 - (void)swiz_setHighlighted:(BOOL)highlighted

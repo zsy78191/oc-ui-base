@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ui-base"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "自用代码中间层"
 
   # This description is used to generate tags and improve search results.
@@ -140,5 +140,7 @@ Pod::Spec.new do |s|
   s.dependency 'ChameleonFramework'
   s.dependency 'IQKeyboardManager'
   s.dependency 'Masonry'
+  s.dependency 'YYKit'
+  s.dependency 'oc-string'
 
 end
