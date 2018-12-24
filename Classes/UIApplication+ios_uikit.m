@@ -33,7 +33,7 @@
 - (NSString * _Nonnull (^)(void))bundleDispalyName
 {
     return ^ {
-        return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"BundleDisplayName"];
+        return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
     };
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-
+#import "UIApplication+ios_uikit.h"
 @interface ui_baseTests : XCTestCase
 
 @end
@@ -25,6 +25,9 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    NSString* n = [UIApplication sharedApplication].bundleDispalyName();
+    NSLog(@"%@",n);
+    NSAssert([n isEqualToString:@"BaseTest"], @"");
 }
 
 - (void)testPerformanceExample {

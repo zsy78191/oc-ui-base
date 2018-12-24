@@ -5,7 +5,7 @@ PODS:
   - Classy (1.0.0)
   - IQKeyboardManager (6.2.0)
   - Masonry (1.1.0)
-  - oc-string (0.0.1):
+  - oc-string (0.0.2):
     - RegexKitLite (~> 4.0)
     - YYKit (~> 1.0.9)
   - pop (1.0.12)
@@ -49,7 +49,7 @@ SPEC CHECKSUMS:
   Classy: bbe2436d6872dfeda5eaa2a3c3d705a9c30b1709
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  oc-string: d792cc8683f4fe5ce9f60dc8bf4716f1baf68aaf
+  oc-string: 4e9677676cc379ee3521af685a578661d6727fe4
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
