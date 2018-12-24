@@ -30,6 +30,13 @@
     };
 }
 
+- (NSString * _Nonnull (^)(void))bundleDispalyName
+{
+    return ^ {
+        return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"BundleDisplayName"];
+    };
+}
+
 - (NSString *(^)(void))bundleID
 {
     return ^{
