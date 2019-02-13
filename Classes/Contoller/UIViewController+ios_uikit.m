@@ -107,4 +107,11 @@
     });
 }
 
+- (void)hudDismiss
+{
+    dispatch_async_on_main_queue(^{
+        [SVProgressHUD dismiss];
+    });
+}
+
 @end

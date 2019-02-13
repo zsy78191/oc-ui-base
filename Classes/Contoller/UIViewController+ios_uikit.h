@@ -35,5 +35,6 @@
 - (void)hudFail:(NSString*)message;
 - (void)hudProgress:(float)progress;
 - (void)hudWait:(NSString*)message;
+- (void)hudDismiss;
 
 @end

@@ -26,7 +26,6 @@
 		D46DFB6121C3540200675B86 /* UIAlertController+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB5821C3540200675B86 /* UIAlertController+Functional.m */; };
 		D46DFB6221C3540200675B86 /* UIViewController+ios_uikit.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB5921C3540200675B86 /* UIViewController+ios_uikit.m */; };
 		D46DFB6521C3553700675B86 /* NSObject+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB6321C3553700675B86 /* NSObject+Functional.m */; };
-		D46DFBCE21C36F4300675B86 /* ui-base.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D46DFBCD21C36F4300675B86 /* ui-base.podspec */; };
 		E478C2BAE01D7F9FBF949DBC /* Pods_ui_baseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FFE47086E38EAE80000308 /* Pods_ui_baseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +89,6 @@
 		D46DFB5A21C3540200675B86 /* UIDevice+ios_uikit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ios_uikit.h"; sourceTree = "<group>"; };
 		D46DFB6321C3553700675B86 /* NSObject+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Functional.m"; sourceTree = "<group>"; };
 		D46DFB6421C3553700675B86 /* NSObject+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Functional.h"; sourceTree = "<group>"; };
-		D46DFBCD21C36F4300675B86 /* ui-base.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ui-base.podspec"; sourceTree = "<group>"; };
 		EA755B31ABA5115604589D73 /* Pods-ui-baseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ui-baseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ui-baseTests/Pods-ui-baseTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,7 +146,6 @@
 		D46DFB0A21C3514400675B86 = {
 			isa = PBXGroup;
 			children = (
-				D46DFBCD21C36F4300675B86 /* ui-base.podspec */,
 				D46DFB4821C3540200675B86 /* Classes */,
 				D46DFB1521C3514400675B86 /* ui-base */,
 				D46DFB2E21C3514500675B86 /* ui-baseTests */,
@@ -217,7 +214,8 @@
 				D46DFB5A21C3540200675B86 /* UIDevice+ios_uikit.h */,
 				D46DFB5121C3540200675B86 /* UIDevice+ios_uikit.m */,
 			);
-			path = Classes;
+			name = Classes;
+			path = ../Classes;
 			sourceTree = "<group>";
 		};
 		D46DFB4A21C3540200675B86 /* Image+Color */ = {
@@ -352,7 +350,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D46DFB2321C3514500675B86 /* LaunchScreen.storyboard in Resources */,
-				D46DFBCE21C36F4300675B86 /* ui-base.podspec in Resources */,
 				D46DFB2021C3514500675B86 /* Assets.xcassets in Resources */,
 				D46DFB1E21C3514400675B86 /* Main.storyboard in Resources */,
 			);
