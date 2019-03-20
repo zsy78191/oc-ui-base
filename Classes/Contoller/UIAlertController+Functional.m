@@ -102,15 +102,20 @@
     };
 }
 
-- (void (^)(__kindof UIViewController * _Nonnull vc,UIModalTransitionStyle style,__kindof UIView* sourceView, CGRect sourceRect,UIPopoverArrowDirection arrow))showAsProver
+- (void (^)(UIViewController * _Nonnull, UIModalTransitionStyle, UIView * _Nonnull, CGRect, UIPopoverArrowDirection, UIBarButtonItem * _Nullable))showAsProver
 {
-    return ^(__kindof UIViewController * _Nonnull vc,UIModalTransitionStyle style,__kindof UIView* sourceView, CGRect sourceRect,UIPopoverArrowDirection arrow){
+    return ^(__kindof UIViewController * _Nonnull vc,UIModalTransitionStyle style,__kindof UIView* sourceView, CGRect sourceRect,UIPopoverArrowDirection arrow, UIBarButtonItem * _Nullable item){
         dispatch_async(dispatch_get_main_queue(), ^{
             
             self.modalTransitionStyle = style;
             self.modalPresentationStyle = UIModalPresentationPopover;
             self.popoverPresentationController.sourceView = sourceView;
-            self.popoverPresentationController.sourceRect = sourceRect;
+            if (item) {
+                self.popoverPresentationController.barButtonItem = item;
+            }
+            else {
+                self.popoverPresentationController.sourceRect = sourceRect;
+            }
             self.popoverPresentationController.permittedArrowDirections = arrow;
             [vc presentViewController:self animated:YES completion:nil];
             

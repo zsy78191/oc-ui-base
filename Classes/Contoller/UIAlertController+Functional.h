@@ -28,7 +28,7 @@ UIAlertController* UI_ActionSheet(void);
 @property (nonatomic, readonly)  UIAlertController* (^cancel)(NSString* title,void (^ __nullable)(UIAlertAction *action));
 @property (nonatomic, readonly)  UIAlertController* (^input)(NSString* title,void (^ __nullable)(UITextField *field));
 @property (nonatomic, readonly)  void (^show)(__kindof UIViewController* vc);
-@property (nonatomic, readonly)  void (^showAsProver)(__kindof UIViewController * _Nonnull vc,UIModalTransitionStyle style,__kindof UIView* sourceView, CGRect sourceRect,UIPopoverArrowDirection arrow);
+@property (nonatomic, readonly)  void (^showAsProver)(__kindof UIViewController * _Nonnull vc,UIModalTransitionStyle style,__kindof UIView* sourceView, CGRect sourceRect,UIPopoverArrowDirection arrow,UIBarButtonItem* _Nullable item);
 
 
 @end

@@ -29,6 +29,10 @@
                 rect:(CGRect) sourceRect
                arrow:(UIPopoverArrowDirection) arrow;
 
+- (void)showAsProver:(UIAlertController*)controller
+                view:(__kindof UIView* )sourceView
+                item:(UIBarButtonItem*) item
+               arrow:(UIPopoverArrowDirection) arrow;
 
 - (void)hudInfo:(NSString*)message;
 - (void)hudSuccess:(NSString*)message;

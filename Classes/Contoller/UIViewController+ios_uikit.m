@@ -69,7 +69,16 @@
                arrow:(UIPopoverArrowDirection)arrow
 {
     controller.showAsProver(self,
-                            UIModalTransitionStyleFlipHorizontal, sourceView, sourceRect, arrow);
+                            UIModalTransitionStyleFlipHorizontal, sourceView, sourceRect, arrow, nil);
+}
+
+- (void)showAsProver:(UIAlertController*)controller
+                view:(__kindof UIView* )sourceView
+                item:(UIBarButtonItem*) item
+               arrow:(UIPopoverArrowDirection) arrow;
+{
+    controller.showAsProver(self,
+                            UIModalTransitionStyleFlipHorizontal, sourceView, CGRectZero, arrow, item);
 }
 
 - (void)hudInfo:(NSString *)message
