@@ -26,6 +26,7 @@
 		D46DFB6521C3553700675B86 /* NSObject+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB6321C3553700675B86 /* NSObject+Functional.m */; };
 		D4B538B0224FA230002F8333 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B538AF224FA230002F8333 /* icon1.png */; };
 		D4B538B1224FA388002F8333 /* UIAlertController+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB5821C3540200675B86 /* UIAlertController+Functional.m */; };
+		D4B538B2224FA78F002F8333 /* UIViewController+ios_uikit.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB5921C3540200675B86 /* UIViewController+ios_uikit.m */; };
 		E478C2BAE01D7F9FBF949DBC /* Pods_ui_baseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FFE47086E38EAE80000308 /* Pods_ui_baseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -475,6 +476,7 @@
 				D46DFB1B21C3514400675B86 /* ViewController.m in Sources */,
 				D46DFB6021C3540200675B86 /* UIApplication+ios_uikit.m in Sources */,
 				D46DFB5F21C3540200675B86 /* UIView+ios_uikit.m in Sources */,
+				D4B538B2224FA78F002F8333 /* UIViewController+ios_uikit.m in Sources */,
 				D46DFB5E21C3540200675B86 /* UIDevice+ios_uikit.m in Sources */,
 				D46DFB2621C3514500675B86 /* main.m in Sources */,
 				D46DFB1821C3514400675B86 /* AppDelegate.m in Sources */,
