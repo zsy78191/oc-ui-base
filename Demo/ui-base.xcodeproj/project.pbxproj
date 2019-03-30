@@ -23,9 +23,9 @@
 		D46DFB5E21C3540200675B86 /* UIDevice+ios_uikit.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB5121C3540200675B86 /* UIDevice+ios_uikit.m */; };
 		D46DFB5F21C3540200675B86 /* UIView+ios_uikit.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB5221C3540200675B86 /* UIView+ios_uikit.m */; };
 		D46DFB6021C3540200675B86 /* UIApplication+ios_uikit.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB5321C3540200675B86 /* UIApplication+ios_uikit.m */; };
-		D46DFB6121C3540200675B86 /* UIAlertController+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB5821C3540200675B86 /* UIAlertController+Functional.m */; };
-		D46DFB6221C3540200675B86 /* UIViewController+ios_uikit.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB5921C3540200675B86 /* UIViewController+ios_uikit.m */; };
 		D46DFB6521C3553700675B86 /* NSObject+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB6321C3553700675B86 /* NSObject+Functional.m */; };
+		D4B538B0224FA230002F8333 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B538AF224FA230002F8333 /* icon1.png */; };
+		D4B538B1224FA388002F8333 /* UIAlertController+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB5821C3540200675B86 /* UIAlertController+Functional.m */; };
 		E478C2BAE01D7F9FBF949DBC /* Pods_ui_baseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FFE47086E38EAE80000308 /* Pods_ui_baseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +89,7 @@
 		D46DFB5A21C3540200675B86 /* UIDevice+ios_uikit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ios_uikit.h"; sourceTree = "<group>"; };
 		D46DFB6321C3553700675B86 /* NSObject+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Functional.m"; sourceTree = "<group>"; };
 		D46DFB6421C3553700675B86 /* NSObject+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Functional.h"; sourceTree = "<group>"; };
+		D4B538AF224FA230002F8333 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
 		EA755B31ABA5115604589D73 /* Pods-ui-baseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ui-baseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ui-baseTests/Pods-ui-baseTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +170,7 @@
 		D46DFB1521C3514400675B86 /* ui-base */ = {
 			isa = PBXGroup;
 			children = (
+				D4B538AF224FA230002F8333 /* icon1.png */,
 				D46DFB1621C3514400675B86 /* AppDelegate.h */,
 				D46DFB1721C3514400675B86 /* AppDelegate.m */,
 				D46DFB1921C3514400675B86 /* ViewController.h */,
@@ -349,6 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B538B0224FA230002F8333 /* icon1.png in Resources */,
 				D46DFB2321C3514500675B86 /* LaunchScreen.storyboard in Resources */,
 				D46DFB2021C3514500675B86 /* Assets.xcassets in Resources */,
 				D46DFB1E21C3514400675B86 /* Main.storyboard in Resources */,
@@ -472,15 +475,14 @@
 				D46DFB1B21C3514400675B86 /* ViewController.m in Sources */,
 				D46DFB6021C3540200675B86 /* UIApplication+ios_uikit.m in Sources */,
 				D46DFB5F21C3540200675B86 /* UIView+ios_uikit.m in Sources */,
-				D46DFB6121C3540200675B86 /* UIAlertController+Functional.m in Sources */,
 				D46DFB5E21C3540200675B86 /* UIDevice+ios_uikit.m in Sources */,
 				D46DFB2621C3514500675B86 /* main.m in Sources */,
 				D46DFB1821C3514400675B86 /* AppDelegate.m in Sources */,
 				D46DFB5C21C3540200675B86 /* UIImage+cui.m in Sources */,
 				D46DFB5B21C3540200675B86 /* UIColor+blend.m in Sources */,
-				D46DFB6221C3540200675B86 /* UIViewController+ios_uikit.m in Sources */,
 				D46DFB6521C3553700675B86 /* NSObject+Functional.m in Sources */,
 				D46DFB5D21C3540200675B86 /* UIColor+cui_theme.m in Sources */,
+				D4B538B1224FA388002F8333 /* UIAlertController+Functional.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

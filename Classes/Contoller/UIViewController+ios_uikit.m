@@ -27,18 +27,18 @@
 {
     __weak typeof(self) weakSelf = self;
     return alert
-    .titled(title)
-    .recommend(recommend, ^(UIAlertAction * _Nonnull action, UIAlertController * _Nonnull alert) {
+    .ui_titled(title)
+    .ui_recommend(recommend, ^(UIAlertAction * _Nonnull action, UIAlertController * _Nonnull alert) {
         if (block) {
             block(2,weakSelf);
         }
     })
-    .action(action, ^(UIAlertAction * _Nonnull action, UIAlertController * _Nonnull alert) {
+    .ui_action(action, ^(UIAlertAction * _Nonnull action, UIAlertController * _Nonnull alert) {
         if (block) {
             block(1,weakSelf);
         }
     })
-    .cancel(cancel, ^(UIAlertAction * _Nonnull action) {
+    .ui_cancel(cancel, ^(UIAlertAction * _Nonnull action) {
         if (block) {
             block(0,weakSelf);
         }
@@ -68,7 +68,7 @@
                 rect:(CGRect)sourceRect
                arrow:(UIPopoverArrowDirection)arrow
 {
-    controller.showAsProver(self,
+    controller.ui_showAsProver(self,
                             UIModalTransitionStyleFlipHorizontal, sourceView, sourceRect, arrow, nil);
 }
 
@@ -77,7 +77,7 @@
                 item:(UIBarButtonItem*) item
                arrow:(UIPopoverArrowDirection) arrow;
 {
-    controller.showAsProver(self,
+    controller.ui_showAsProver(self,
                             UIModalTransitionStyleFlipHorizontal, sourceView, CGRectZero, arrow, item);
 }
 

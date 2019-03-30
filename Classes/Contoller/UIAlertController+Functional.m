@@ -10,16 +10,6 @@
 
 @implementation UIAlertController (Functional)
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 + (UIAlertController * _Nonnull (^)(void))alert
 {
@@ -102,7 +92,7 @@
     };
 }
 
-- (void (^)(UIViewController * _Nonnull, UIModalTransitionStyle, UIView * _Nonnull, CGRect, UIPopoverArrowDirection, UIBarButtonItem * _Nullable))showAsProver
+- (void (^)(__kindof UIViewController * _Nonnull vc,UIModalTransitionStyle style,__kindof UIView* sourceView, CGRect sourceRect,UIPopoverArrowDirection arrow,UIBarButtonItem* _Nullable item))showAsProver
 {
     return ^(__kindof UIViewController * _Nonnull vc,UIModalTransitionStyle style,__kindof UIView* sourceView, CGRect sourceRect,UIPopoverArrowDirection arrow, UIBarButtonItem * _Nullable item){
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -150,13 +140,6 @@ UIAlertController* UI_ActionSheet(){
     }
 }
 
-
-- (void)dealloc
-{
-    NSLog(@"%s",__func__);
-}
-
- 
 /*
 #pragma mark - Navigation
 
