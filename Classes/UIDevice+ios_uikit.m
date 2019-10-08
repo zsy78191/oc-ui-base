@@ -7,9 +7,18 @@
 //
 
 #import "UIDevice+ios_uikit.h"
-@import YYKit;
+//@import YYKit;
 #import <LocalAuthentication/LocalAuthentication.h>
 @implementation UIDevice (ios_uikit)
+
+- (BOOL)isPad {
+    static dispatch_once_t one;
+    static BOOL pad;
+    dispatch_once(&one, ^{
+        pad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+    });
+    return pad;
+}
 
 - (void)test
 {

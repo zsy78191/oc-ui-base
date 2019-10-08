@@ -24,6 +24,7 @@
 		D46DFB5F21C3540200675B86 /* UIView+ios_uikit.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB5221C3540200675B86 /* UIView+ios_uikit.m */; };
 		D46DFB6021C3540200675B86 /* UIApplication+ios_uikit.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB5321C3540200675B86 /* UIApplication+ios_uikit.m */; };
 		D46DFB6521C3553700675B86 /* NSObject+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB6321C3553700675B86 /* NSObject+Functional.m */; };
+		D4B36E33234C942B004BAE48 /* UIApplication+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B36E32234C942A004BAE48 /* UIApplication+YYAdd.m */; };
 		D4B538B0224FA230002F8333 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B538AF224FA230002F8333 /* icon1.png */; };
 		D4B538B1224FA388002F8333 /* UIAlertController+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB5821C3540200675B86 /* UIAlertController+Functional.m */; };
 		D4B538B2224FA78F002F8333 /* UIViewController+ios_uikit.m in Sources */ = {isa = PBXBuildFile; fileRef = D46DFB5921C3540200675B86 /* UIViewController+ios_uikit.m */; };
@@ -90,6 +91,9 @@
 		D46DFB5A21C3540200675B86 /* UIDevice+ios_uikit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ios_uikit.h"; sourceTree = "<group>"; };
 		D46DFB6321C3553700675B86 /* NSObject+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Functional.m"; sourceTree = "<group>"; };
 		D46DFB6421C3553700675B86 /* NSObject+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Functional.h"; sourceTree = "<group>"; };
+		D4B36E31234C942A004BAE48 /* UIApplication+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+YYAdd.h"; sourceTree = "<group>"; };
+		D4B36E32234C942A004BAE48 /* UIApplication+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+YYAdd.m"; sourceTree = "<group>"; };
+		D4B36E34234C9499004BAE48 /* YYKitMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitMacro.h; sourceTree = "<group>"; };
 		D4B538AF224FA230002F8333 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
 		EA755B31ABA5115604589D73 /* Pods-ui-baseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ui-baseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ui-baseTests/Pods-ui-baseTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,6 +210,9 @@
 		D46DFB4821C3540200675B86 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D4B36E34234C9499004BAE48 /* YYKitMacro.h */,
+				D4B36E31234C942A004BAE48 /* UIApplication+YYAdd.h */,
+				D4B36E32234C942A004BAE48 /* UIApplication+YYAdd.m */,
 				D46DFB6421C3553700675B86 /* NSObject+Functional.h */,
 				D46DFB6321C3553700675B86 /* NSObject+Functional.m */,
 				D46DFB5521C3540200675B86 /* Contoller */,
@@ -484,6 +491,7 @@
 				D46DFB5B21C3540200675B86 /* UIColor+blend.m in Sources */,
 				D46DFB6521C3553700675B86 /* NSObject+Functional.m in Sources */,
 				D46DFB5D21C3540200675B86 /* UIColor+cui_theme.m in Sources */,
+				D4B36E33234C942B004BAE48 /* UIApplication+YYAdd.m in Sources */,
 				D4B538B1224FA388002F8333 /* UIAlertController+Functional.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

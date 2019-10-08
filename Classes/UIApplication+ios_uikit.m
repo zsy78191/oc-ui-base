@@ -7,7 +7,8 @@
 //
 
 #import "UIApplication+ios_uikit.h"
-@import YYKit;
+//@import YYKit;
+#import "UIApplication+YYAdd.h"
 @import SVProgressHUD;
 @implementation UIApplication (ios_uikit)
 

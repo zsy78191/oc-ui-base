@@ -10,7 +10,8 @@
 @import SVProgressHUD;
 #import "UIAlertController+Functional.h"
 #import "UIDevice+ios_uikit.h"
-@import YYKit;
+//@import YYKit;
+#import "YYKitMacro.h"
 @implementation UIViewController (ios_uikit)
 
 - (void)test
