@@ -10,10 +10,10 @@
 //
 
 #import "UIApplication+YYAdd.h"
-#import "NSArray+YYAdd.h"
-#import "NSObject+YYAdd.h"
+//#import "NSArray+YYAdd.h"
+//#import "NSObject+YYAdd.h"
 #import "YYKitMacro.h"
-#import "UIDevice+YYAdd.h"
+//#import "UIDevice+YYAdd.h"
 #import <sys/sysctl.h>
 #import <mach/mach.h>
 #import <objc/runtime.h>
@@ -61,28 +61,28 @@ YYSYNTH_DUMMY_CLASS(UIApplication_YYAdd_OC)
 - (NSString *)libraryPath {
     return [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject];
 }
-
-- (BOOL)isPirated {
-    if ([[UIDevice currentDevice] isSimulator]) return YES; // Simulator is not from appstore
-    
-    if (getgid() <= 10) return YES; // process ID shouldn't be root
-    
-    if ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"SignerIdentity"]) {
-        return YES;
-    }
-    
-    if (![self _yy_fileExistInMainBundle:@"_CodeSignature"]) {
-        return YES;
-    }
-    
-    if (![self _yy_fileExistInMainBundle:@"SC_Info"]) {
-        return YES;
-    }
-    
-    //if someone really want to crack your app, this method is useless..
-    //you may change this method's name, encrypt the code and do more check..
-    return NO;
-}
+//
+//- (BOOL)isPirated {
+//    if ([[UIDevice currentDevice] isSimulator]) return YES; // Simulator is not from appstore
+//
+//    if (getgid() <= 10) return YES; // process ID shouldn't be root
+//
+//    if ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"SignerIdentity"]) {
+//        return YES;
+//    }
+//
+//    if (![self _yy_fileExistInMainBundle:@"_CodeSignature"]) {
+//        return YES;
+//    }
+//
+//    if (![self _yy_fileExistInMainBundle:@"SC_Info"]) {
+//        return YES;
+//    }
+//
+//    //if someone really want to crack your app, this method is useless..
+//    //you may change this method's name, encrypt the code and do more check..
+//    return NO;
+//}
 
 - (BOOL)_yy_fileExistInMainBundle:(NSString *)name {
     NSString *bundlePath = [[NSBundle mainBundle] bundlePath];

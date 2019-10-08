@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, readonly) NSString *appBuildVersion;
 
 /// Whether this app is pirated (not install from appstore).
-@property (nonatomic, readonly) BOOL isPirated;
+//@property (nonatomic, readonly) BOOL isPirated;
 
 /// Whether this app is being debugged (debugger attached).
 @property (nonatomic, readonly) BOOL isBeingDebugged;

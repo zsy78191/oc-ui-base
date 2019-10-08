@@ -3,27 +3,23 @@ PODS:
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
   - Classy (1.0.0)
-  - IQKeyboardManager (6.2.0)
+  - IQKeyboardManager (6.5.0)
   - Masonry (1.1.0)
-  - oc-string (0.0.2):
+  - oc-string (0.0.6):
     - RegexKitLite (~> 4.0)
-    - YYKit (~> 1.0.9)
   - pop (1.0.12)
   - RegexKitLite (4.0)
-  - SDWebImage (4.4.3):
-    - SDWebImage/Core (= 4.4.3)
-  - SDWebImage/Core (4.4.3)
+  - SDWebImage (5.2.2):
+    - SDWebImage/Core (= 5.2.2)
+  - SDWebImage/Core (5.2.2)
   - SVProgressHUD (2.2.5)
-  - YYKit (1.0.9):
-    - YYKit/no-arc (= 1.0.9)
-  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - ChameleonFramework
   - Classy
   - IQKeyboardManager
   - Masonry
-  - oc-string (from `../../base/oc-string/oc-string.podspec`)
+  - oc-string
   - pop
   - SDWebImage
   - SVProgressHUD
@@ -34,28 +30,23 @@ SPEC REPOS:
     - Classy
     - IQKeyboardManager
     - Masonry
+    - oc-string
     - pop
     - RegexKitLite
     - SDWebImage
     - SVProgressHUD
-    - YYKit
-
-EXTERNAL SOURCES:
-  oc-string:
-    :podspec: "../../base/oc-string/oc-string.podspec"
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  Classy: bbe2436d6872dfeda5eaa2a3c3d705a9c30b1709
-  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  Classy: 6111e471761bb6fb11cfc028bbe25c0a03566e69
+  IQKeyboardManager: 700e5155d6a292383b54e8678aec769e14fc78fc
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  oc-string: 4e9677676cc379ee3521af685a578661d6727fe4
+  oc-string: 21daf685eb8c767f904eb57f9b6f75422cb44d18
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
-  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+  SDWebImage: 5fcdb02cc35e05fc35791ec514b191d27189f872
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: ca37127618f1a056d5a9716dce2c16c50e64f599
+PODFILE CHECKSUM: d07ceed819be17908db9ff4c478d57b8dab45e32
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.5

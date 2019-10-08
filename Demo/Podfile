@@ -11,7 +11,7 @@ target 'ui-base' do
   pod 'ChameleonFramework'
   pod 'IQKeyboardManager'
   pod 'Masonry'
-  pod 'oc-string', :podspec => '../../base/oc-string/oc-string.podspec'
+  pod 'oc-string'
 
 
   # Pods for ui-base
