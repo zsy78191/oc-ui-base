@@ -12,16 +12,16 @@
     
 }
 
-- (UIAlertController*)alert:(NSString*)title
-    recommend:(NSString*)recommend
-       action:(NSString*)action
-       cancel:(NSString*)cancel
+- (UIAlertController*)alert:(nullable NSString*)title
+    recommend:(nullable NSString*)recommend
+       action:(nullable NSString*)action
+       cancel:(nullable NSString*)cancel
         block:(void(^)(NSInteger idx, __kindof UIViewController* vc))block;
 
-- (UIAlertController*)actionsheet:(NSString*)title
-          recommend:(NSString*)recommend
-             action:(NSString*)action
-             cancel:(NSString*)cancel
+- (UIAlertController*)actionsheet:(nullable NSString*)title
+          recommend:(nullable NSString*)recommend
+             action:(nullable NSString*)action
+             cancel:(nullable NSString*)cancel
               block:(void(^)(NSInteger idx, __kindof UIViewController* vc))block;
 
 - (void)showAsProver:(UIAlertController*)controller
